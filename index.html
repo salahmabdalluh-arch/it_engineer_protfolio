@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Salah Mohammad | IT & Systems Engineer</title>
+    <meta name="description" content="مهندس تكنولوجيا ونظم معلومات - مطور ويب متكامل | مدير قواعد بيانات | متخصص شبكات">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/967781284799" target="_blank" class="floating-whatsapp" title="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Salah.</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> من أنا</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> المهارات</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> المشاريع</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> تواصل</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://t.me/Eng_salahmohammed" target="_blank" class="nav-cta">تواصل معي</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-center-layout">
+                <!-- Profile Image (Top) -->
+                <div class="hero-profile-image">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image">
+                        <img src="images/profile.jpg" alt="Salah Mohammad">
+                        <div class="image-badge">
+                            <i class="fas fa-code"></i> Engineer
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Name (Below Image) -->
+                <div class="hero-text-block">
+                    <h1 class="hero-title">
+                        <span class="hero-name">صلاح محمد علي</span>
+                    </h1>
+                    <p class="hero-name-en">Eng. Salah Mohammad</p>
+                </div>
+
+                <!-- Job Title -->
+                <div class="hero-job-title">
+                    <span class="job-divider"></span>
+                    <span>IT & Systems Engineer</span>
+                    <span class="job-dot">|</span>
+                    <span>Full-Stack Developer</span>
+                    <span class="job-dot">|</span>
+                    <span>Database Administrator</span>
+                    <span class="job-divider"></span>
+                </div>
+
+                <!-- Social Media Bar -->
+                <div class="hero-social-bar">
+                    <a href="https://wa.me/967781284799" target="_blank" rel="noopener" class="social-icon whatsapp" title="واتساب">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:+967781284799" class="social-icon phone" title="اتصال مباشر">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://instagram.com/Eng.SalahMohammad" target="_blank" rel="noopener" class="social-icon instagram" title="إنستغرام">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/Eng_salahmohammed" target="_blank" rel="noopener" class="social-icon telegram" title="تليجرام">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> تواصل معي
+                    </a>
+                    <a href="#" class="btn btn-outline" id="download-cv">
+                        <i class="fas fa-download"></i> تحميل السيرة الذاتية
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">مشاريع متميزة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">مهارات تقنية</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">تقنيات شبكات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-user-astronaut"></i> من أنا</span>
+                <h2 class="section-title">تعرّف على <span class="highlight">صلاح</span></h2>
+                <p class="section-subtitle">شغف بالتقنية وخبرة في بناء الحلول الرقمية</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        أنا <strong>صلاح محمد علي</strong>، مهندس تكنولوجيا ونظم معلومات شغوف بتطوير الحلول البرمجية المتكاملة. أجمع بين الخبرة في تطوير تطبيقات الويب، إدارة قواعد البيانات الاحترافية، وهندسة شبكات الحاسوب لتقديم حلول تقنية متكاملة تلبي احتياجات المؤسسات.
+                    </p>
+                    <p class="about-paragraph">
+                        أعمل على تصميم وتطوير أنظمة متكاملة باستخدام أحدث التقنيات والأدوات، مع التركيز على الأداء العالي، الأمان، وسهولة الاستخدام. أسعى دائماً لتعلم الجديد وتطبيق أفضل الممارسات في كل مشروع.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-database"></i>
+                            <span>قواعد بيانات Oracle</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-network-wired"></i>
+                            <span>هندسة الشبكات</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>تطوير الويب</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-robot"></i>
+                            <span>الذكاء الاصطناعي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-layer-group"></i> المهارات التقنية</span>
+                <h2 class="section-title">القدرات <span class="highlight">التقنية</span></h2>
+                <p class="section-subtitle">منظومة متكاملة من المهارات التقنية المتخصصة</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-card-title">تطوير الويب</h3>
+                    <p class="skill-card-desc">بناء تطبيقات ويب متكاملة باستخدام أحدث التقنيات</p>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">88%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88" style="background: linear-gradient(90deg, #f89820, #5382a1);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percent">82%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82" style="background: linear-gradient(90deg, #777bb3, #8892bf);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85" style="background: linear-gradient(90deg, #f7df1e, #f0db4f);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <span class="skill-percent">92%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="92" style="background: linear-gradient(90deg, #e34f26, #1572b6);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code & NetBeans</span>
+                            <span class="skill-percent">90%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90" style="background: linear-gradient(90deg, #007acc, #003087);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-card-title">قواعد البيانات</h3>
+                    <p class="skill-card-desc">تصميم وإدارة قواعد البيانات المؤسسية الضخمة</p>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle Database 19c</span>
+                            <span class="skill-percent">90%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90" style="background: linear-gradient(90deg, #f80000, #ff6600);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle APEX</span>
+                            <span class="skill-percent">85%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85" style="background: linear-gradient(90deg, #036fae, #0284c7);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Queries</span>
+                            <span class="skill-percent">93%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="93" style="background: linear-gradient(90deg, #00618a, #00a8d6);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Networks -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="skill-card-title">الشبكات والأنظمة</h3>
+                    <p class="skill-card-desc">هندسة البنية التحتية للشبكات وإدارة الأداء</p>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Cisco Packet Tracer</span>
+                            <span class="skill-percent">87%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="87" style="background: linear-gradient(90deg, #049fd9, #00bceb);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Routers & Switches</span>
+                            <span class="skill-percent">84%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="84" style="background: linear-gradient(90deg, #059669, #10b981);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VLANs Configuration</span>
+                            <span class="skill-percent">82%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82" style="background: linear-gradient(90deg, #7c3aed, #a78bfa);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">StarUML (UML Diagrams)</span>
+                            <span class="skill-percent">88%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88" style="background: linear-gradient(90deg, #1e293b, #475569);"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-card-title">أدوات إدارة الكود</h3>
+                    <p class="skill-card-desc">إدارة نسخ الكود والعمل التعاوني الاحترافي</p>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percent">90%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90" style="background: linear-gradient(90deg, #f05032, #f97316);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <span class="skill-percent">88%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88" style="background: linear-gradient(90deg, #181717, #374151);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI-Assisted Workflow</span>
+                            <span class="skill-percent">80%</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80" style="background: linear-gradient(90deg, #10a37f, #22c55e);"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft-skills-section">
+                <h3 class="soft-skills-title"><i class="fas fa-heart"></i> المهارات الشخصية</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>حل المشكلات</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>التفكير التحليلي</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-book-reader"></i>
+                        <span>التعلم الذاتي المستمر</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-comments"></i>
+                        <span>التواصل التقني</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-project-diagram"></i> المشاريع</span>
+                <h2 class="section-title">المشاريع <span class="highlight">المنجزة</span></h2>
+                <p class="section-subtitle">أبرز المشاريع التقنية المنجزة في مجال هندسة الأنظمة المؤسسية</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Oracle</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-year">2024</div>
+                        <h3 class="project-title">نظام حجز السيارات الذكي</h3>
+                        <p class="project-desc">نظام متكامل لإدارة حجز السيارات يتضمن خوادم ويب وقواعد بيانات متقدمة مع واجهة مستخدم تفاعلية</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Oracle DB</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Apache</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>Oracle APEX</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-year">2024</div>
+                        <h3 class="project-title">نظام إدارة الفنادق</h3>
+                        <p class="project-desc">لوحة تحكم تفاعلية لإدارة الفنادق تشمل حجوزات الغرف، إدارة النزلاء، والتقارير المالية</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Oracle APEX</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span>Oracle APEX</span>
+                                <span>HTML5</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-year">2025</div>
+                        <h3 class="project-title">منصة تسجيل الدورات الأكاديمية</h3>
+                        <p class="project-desc">منصة استعلام وتسجيل إلكتروني متكاملة للأكاديمية تسمح للطلاب بالتسجيل والمتابعة عبر الإنترنت</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Oracle APEX</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-envelope"></i> تواصل</span>
+                <h2 class="section-title">تواصل <span class="highlight">معي</span></h2>
+                <p class="section-subtitle">هل لديك مشروع أو فكرة؟ دعنا نبني شيئاً استثنائياً معاً</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">معلومات التواصل</h3>
+                    <p class="contact-info-desc">أنا دائماً سعيد لمناقشة المشاريع التقنية الجديدة وفرص التعاون الاستراتيجي</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-user"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">الاسم</span>
+                                <span class="contact-value">م. صلاح محمد علي</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">البريد الإلكتروني</span>
+                                <a href="mailto:salah.m.abdalluh@gmail.com" class="contact-value">salah.m.abdalluh@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">واتساب</span>
+                                <a href="https://wa.me/967781284799" target="_blank" class="contact-value">+967781284799</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">تليجرام</span>
+                                <a href="https://t.me/Eng_salahmohammed" target="_blank" class="contact-value">@Eng_salahmohammed</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">إنستغرام</span>
+                                <a href="https://instagram.com/Eng.SalahMohammad" target="_blank" class="contact-value">@Eng.SalahMohammad</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://t.me/Eng_salahmohammed" target="_blank" class="social-link" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://wa.me/967781284799" target="_blank" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/Eng.SalahMohammad" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:salah.m.abdalluh@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" placeholder="اكتب اسمك..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <input type="text" id="subject" name="subject" placeholder="موضوع الرسالة...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" placeholder="اكتب رسالتك..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Salah.</span>
+                    <p class="footer-desc">مهندس تكنولوجيا ونظم معلومات<br>شغوف ببناء الحلول التقنية المتكاملة</p>
+                    <div class="footer-socials">
+                        <a href="https://t.me/Eng_salahmohammed" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/967781284799" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/Eng.SalahMohammad" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:salah.m.abdalluh@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من أنا</a></li>
+                        <li><a href="#skills">المهارات</a></li>
+                        <li><a href="#projects">المشاريع</a></li>
+                        <li><a href="#contact">تواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>تواصل مباشر</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> salah.m.abdalluh@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +967781284799</li>
+                        <li><i class="fab fa-telegram"></i> @Eng_salahmohammed</li>
+                        <li><i class="fab fa-instagram"></i> @Eng.SalahMohammad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-profile">
+                    <img src="images/profile.jpg" alt="صلاح محمد علي">
+                    <span>Eng. Salah Mohammad</span>
+                </div>
+                <p>&copy; 2025 صلاح محمد علي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
